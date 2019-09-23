@@ -1,2 +1,10 @@
+.desktop-navigation {
+  background: #fff; }
+  .desktop-navigation .nav-wrapper .brand-logo {
+    line-height: 1px; }
+    .desktop-navigation .nav-wrapper .brand-logo img {
+      width: 60px; }
+  .desktop-navigation .nav-wrapper ul a {
+    color: #039be5; }
 
 /*# sourceMappingURL=home.css.map */

@@ -1,0 +1,21 @@
+$primary-color: #039be5;
+$secondary-color: #fd9826;
+
+.desktop-navigation {
+  background: #fff;
+  .nav-wrapper {
+    .brand-logo {
+      line-height: 1px;
+      img {
+        width: 60px;
+      }
+      label {
+      }
+    }
+    ul {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}

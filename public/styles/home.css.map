@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"home.css"}
+{"version":3,"sources":["home.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB,EAAE;EAClB;IACE,gBAAgB,EAAE;IAClB;MACE,WAAW,EAAE;EACjB;IACE,cAAc,EAAE","file":"home.css","sourcesContent":[".desktop-navigation {\n  background: #fff; }\n  .desktop-navigation .nav-wrapper .brand-logo {\n    line-height: 1px; }\n    .desktop-navigation .nav-wrapper .brand-logo img {\n      width: 60px; }\n  .desktop-navigation .nav-wrapper ul a {\n    color: #039be5; }\n"]}
