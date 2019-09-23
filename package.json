@@ -1,0 +1,39 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "Involve web app",
+  "main": "index.js",
+  "scripts": {
+    "kill": "mkdir -p public && rm -r public/ && mkdir -p public",
+    "asset": "cp -r resources public",
+    "build-html": "node ./node_modules/kapid_html",
+    "css": "node-sass src/stylesheets/pages -o public/styles",
+    "prefix-css": "postcss public/styles --use=autoprefixer --map=false --dir=public/styles",
+    "build": "yarn kill && yarn asset && yarn build-html && yarn css && yarn prefix-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/involvevtk/web-app.git"
+  },
+  "author": "dipak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/involvevtk/web-app/issues"
+  },
+  "homepage": "https://github.com/involvevtk/web-app#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.1",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "kapid_html": "^1.0.1",
+    "node-sass": "^4.12.0",
+    "node-xlsx": "^0.15.0"
+  },
+  "dependencies": {
+    "postcss-cli": "^6.1.3"
+  }
+}

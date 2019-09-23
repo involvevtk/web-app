@@ -1,0 +1,59 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/dipak/.rvm/gems/ruby-2.3.1/bin:/home/dipak/.rvm/gems/ruby-2.3.1@global/bin:/usr/share/rvm/rubies/ruby-2.3.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/share/rvm/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  8.5.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/dipak/codebase/projects/web-app/node_modules/abbrev'
+
+npm manifest: 
+  {
+    "name": "web-app",
+    "version": "1.0.0",
+    "description": "Involve web app",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/involvevtk/web-app.git"
+    },
+    "author": "dipak",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/involvevtk/web-app/issues"
+    },
+    "homepage": "https://github.com/involvevtk/web-app#readme",
+    "devDependencies": {
+      "@babel/cli": "^7.5.5",
+      "@babel/core": "^7.5.5",
+      "@babel/plugin-proposal-class-properties": "^7.5.5",
+      "@babel/preset-env": "^7.5.5",
+      "@babel/preset-react": "^7.0.0",
+      "autoprefixer": "^9.6.1",
+      "babel-plugin-module-resolver": "^3.2.0",
+      "kapid_html": "^1.0.1",
+      "node-sass": "^4.12.0",
+      "node-xlsx": "^0.15.0"
+    },
+    "dependencies": {
+      "postcss-cli": "^6.1.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
