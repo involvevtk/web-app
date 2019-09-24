@@ -4,8 +4,33 @@
 
 .home {
   .container {
-    .logo {
-      width: 60px;
+    .title-section {
+      margin-top: 80px;
+      .logo {
+        width: 60px;
+      }
+      .brand-name {
+        margin: 0;
+        font-size: 28px;
+        text-shadow: 0px 2px 3px #a09a9b;
+        color: #575656;
+        text-transform: lowercase;
+        letter-spacing: 22px;
+        font-weight: 100;
+      }
+      .slogan-container {
+        padding: 0px;
+        padding-top: 20px;
+        .slogan {
+          margin: 0;
+          font-size: 14px;
+          color: #575656;
+          text-transform: lowercase;
+          letter-spacing: 4px;
+          font-weight: 100;
+          text-align: center;
+        }
+      }
     }
   }
 }

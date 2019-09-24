@@ -2,6 +2,10 @@ body {
   font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
 }
 
+.main-page-content {
+  min-height: 600px;
+}
+
 @mixin textWithBorderBottom($bottomBorderWidth: 10px) {
   color: $dark-1;
   transition: all 500ms;
@@ -36,10 +40,6 @@ body {
       }
     }
   }
-}
-
-.main-page-content {
-  min-height: 500px;
 }
 
 .page-footer {

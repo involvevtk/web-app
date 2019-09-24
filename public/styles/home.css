@@ -1,6 +1,9 @@
 body {
   font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif; }
 
+.main-page-content {
+  min-height: 600px; }
+
 .navigation {
   padding: 10px; }
   @media (min-width: 601px) {
@@ -25,9 +28,6 @@ body {
           color: #039be5; }
           .navigation ul.items li a:hover:after {
             width: 100%; }
-
-.main-page-content {
-  min-height: 500px; }
 
 .page-footer {
   background-color: #f8f9fa;
@@ -70,7 +70,28 @@ body {
           padding-right: 3px;
           color: #fd9826; }
 
-.home .container .logo {
-  width: 60px; }
+.home .container .title-section {
+  margin-top: 80px; }
+  .home .container .title-section .logo {
+    width: 60px; }
+  .home .container .title-section .brand-name {
+    margin: 0;
+    font-size: 28px;
+    text-shadow: 0px 2px 3px #a09a9b;
+    color: #575656;
+    text-transform: lowercase;
+    letter-spacing: 22px;
+    font-weight: 100; }
+  .home .container .title-section .slogan-container {
+    padding: 0px;
+    padding-top: 20px; }
+    .home .container .title-section .slogan-container .slogan {
+      margin: 0;
+      font-size: 14px;
+      color: #575656;
+      text-transform: lowercase;
+      letter-spacing: 4px;
+      font-weight: 100;
+      text-align: center; }
 
 /*# sourceMappingURL=home.css.map */
