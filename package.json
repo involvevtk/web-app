@@ -9,7 +9,8 @@
     "build-html": "node ./node_modules/kapid_html",
     "css": "node-sass src/stylesheets/pages -o public/styles",
     "prefix-css": "postcss public/styles --use=autoprefixer --map=false --dir=public/styles",
-    "build": "yarn kill && yarn asset && yarn build-html && yarn css && yarn prefix-css"
+    "build-js": "./node_modules/.bin/babel src/javascript --out-dir=public/js",
+    "build": "yarn kill && yarn asset && yarn build-html && yarn css && yarn prefix-css && yarn build-js"
   },
   "repository": {
     "type": "git",
