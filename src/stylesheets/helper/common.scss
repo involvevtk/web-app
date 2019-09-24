@@ -1,20 +1,35 @@
 $primary-color: #039be5;
 $secondary-color: #fd9826;
+$dark-1: #323232;
 
-.desktop-navigation {
-  background: #fff;
-  .nav-wrapper {
-    .brand-logo {
-      line-height: 1px;
-      img {
-        width: 60px;
-      }
-      label {
-      }
-    }
-    ul {
+.navigation {
+  padding: 10px;
+  @include breakpoint(m) {
+    padding: 30px 5%;
+  }
+  ul.items {
+    margin: 0;
+    li {
+      display: inline-block;
+      padding: 10px;
       a {
-        color: $primary-color;
+        color: $dark-1;
+        position: relative;
+        transition: all 500ms;
+        &:after {
+          position: relative;
+          width: 10px;
+          height: 1px;
+          background: $primary-color;
+          display: block;
+          content: "";
+        }
+        &:hover {
+          color: $primary-color;
+          &:after {
+            width: 100%;
+          }
+        }
       }
     }
   }
