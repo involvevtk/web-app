@@ -1,6 +1,25 @@
-$primary-color: #039be5;
-$secondary-color: #fd9826;
-$dark-1: #323232;
+body {
+  font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
+}
+
+@mixin textWithBorderBottom($bottomBorderWidth: 10px) {
+  color: $dark-1;
+  transition: all 500ms;
+  &:after {
+    position: relative;
+    width: $bottomBorderWidth;
+    height: 1px;
+    background: $primary-color;
+    display: block;
+    content: "";
+  }
+  &:hover {
+    color: $primary-color;
+    &:after {
+      width: 100%;
+    }
+  }
+}
 
 .navigation {
   padding: 10px;
@@ -13,21 +32,46 @@ $dark-1: #323232;
       display: inline-block;
       padding: 10px;
       a {
-        color: $dark-1;
-        position: relative;
-        transition: all 500ms;
-        &:after {
-          position: relative;
-          width: 10px;
-          height: 1px;
-          background: $primary-color;
-          display: block;
-          content: "";
-        }
-        &:hover {
-          color: $primary-color;
-          &:after {
-            width: 100%;
+        @include textWithBorderBottom();
+      }
+    }
+  }
+}
+
+.main-page-content {
+  min-height: 500px;
+}
+
+.page-footer {
+  background-color: $grey-1;
+  padding: 20px;
+  position: relative;
+  .logo {
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -30px;
+    border-radius: 50%;
+  }
+  .container {
+    border-top: 1px solid $grey-2;
+    margin-top: 50px;
+    .row {
+      margin-bottom: 0px;
+      margin-top: 20px;
+      .col {
+        a.quick-links {
+          padding: 10px;
+          display: inline-block;
+          @include textWithBorderBottom(20px);
+          i {
+            vertical-align: middle;
+            font-size: 16px;
+            padding-right: 3px;
+            color: $secondary-color;
           }
         }
       }
