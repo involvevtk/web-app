@@ -65,6 +65,9 @@
       }
       .who-are-we {
         margin-bottom: 0;
+        @include breakpoint(m) {
+          margin: 100px 0px;
+        }
         .graphic {
           text-align: center;
           i {
@@ -81,6 +84,29 @@
           }
           @include breakpoint(l) {
             font-size: 32px;
+          }
+        }
+      }
+    }
+    .secondary-block {
+      width: 100%;
+      background: #ffffff;
+      // background-image: linear-gradient(to bottom right, #fff, $primary-color);
+      position: relative;
+      margin-bottom: 40px;
+      .story,
+      .vision {
+        .graphic {
+          i {
+            color: $secondary-color;
+            font-size: 114px;
+          }
+        }
+        .description {
+          color: $secondary-color;
+          font-size: 18px;
+          @include breakpoint(m) {
+            font-size: 24px;
           }
         }
       }
