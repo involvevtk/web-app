@@ -52,7 +52,7 @@
         background: rgba(255, 255, 255, 0.45098039215686275);
         right: 0;
         padding: 10px 5px;
-        color: $dark-1;
+        color: $dark-2;
       }
     }
     .card-content {
@@ -68,6 +68,11 @@
   }
   .address,
   .person {
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14),
+        0 5px 25px -2px rgba(0, 0, 0, 0.12), 0 12px 11px 0 rgba(0, 0, 0, 0.2) !important;
+    }
     .card-action {
       padding: 6px 13px;
       a.phone_email {
@@ -76,8 +81,9 @@
         color: $dark-2 !important;
         text-align: left;
         font-size: 12px;
-        letter-spacing: 1px;
+        letter-spacing: 0.9px;
         position: relative;
+        margin-right: 0px !important;
         i {
           font-size: 14px;
           color: $secondary-color !important;
