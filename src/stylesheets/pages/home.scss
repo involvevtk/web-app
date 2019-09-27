@@ -94,31 +94,53 @@
       // background-image: linear-gradient(to bottom right, #fff, $primary-color);
       position: relative;
       margin-bottom: 40px;
-
+      .container {
+        @include breakpoint(l) {
+          max-width: 70%;
+        }
+      }
       .story,
       .vision {
-        .graphic {
-          img.responsive-img {
-            max-width: 270px;
-            @include breakpoint(m) {
-              max-width: 380px;
-            }
+        border-bottom: 1px solid $grey-2;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        h3.title {
+          text-align: center;
+          text-shadow: 0px 3px 1px $grey-1;
+          letter-spacing: 3px;
+          color: $secondary-color;
+        }
+        img.responsive-img {
+          max-width: 270px;
+          margin: 0 auto;
+          display: block;
+          @include breakpoint(m) {
+            max-width: 380px;
+          }
+          @include breakpoint(l) {
+            display: inline-block;
+            width: 19%;
+            vertical-align: top;
           }
         }
+
         .description {
           color: $dark-2;
           font-size: 18px;
           text-align: center;
-          @include breakpoint(m) {
+          @include breakpoint(l) {
             font-size: 24px;
             text-align: left;
+            display: inline-block;
+            width: 80%;
           }
         }
       }
 
       .story .description {
-        @include breakpoint(m) {
+        @include breakpoint(l) {
           text-align: right;
+          float: left;
         }
       }
     }
