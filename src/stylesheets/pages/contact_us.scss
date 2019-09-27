@@ -3,6 +3,27 @@
 @import "../helper/common.scss";
 
 .contact-us {
+  .title {
+    text-align: center;
+    color: #5d5d5d;
+    text-shadow: 0px 6px 5px #00000054;
+    font-family: "Reenie Beanie", cursive;
+    border-bottom: 1px solid #ccc;
+  }
+  .first-row {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    .address,
+    .person {
+      width: 100%;
+      max-width: 100%;
+    }
+    .person {
+      .card-content {
+        min-height: 150px;
+      }
+    }
+  }
   .address {
     max-width: 440px;
     margin: 10px auto 10px auto;
@@ -24,7 +45,8 @@
     .card-image {
       img {
         border-radius: 50%;
-        padding: 30px;
+        padding: 10px;
+        width: 100px;
       }
       .card-title {
         background: rgba(255, 255, 255, 0.45098039215686275);
@@ -43,9 +65,25 @@
       span {
       }
     }
+  }
+  .address,
+  .person {
     .card-action {
+      padding: 6px 13px;
       a.phone_email {
         text-transform: lowercase !important;
+        display: block;
+        color: $dark-2 !important;
+        text-align: left;
+        font-size: 12px;
+        letter-spacing: 1px;
+        position: relative;
+        i {
+          font-size: 14px;
+          color: $secondary-color !important;
+          position: relative;
+          top: 2px;
+        }
       }
     }
   }
