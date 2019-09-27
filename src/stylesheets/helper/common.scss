@@ -39,6 +39,21 @@ body {
         @include textWithBorderBottom();
       }
     }
+    li.brand {
+      padding: 0px;
+      float: right;
+      a {
+        &:after {
+          display: none;
+        }
+        img.logo {
+          width: 32px;
+          @include breakpoint(m) {
+            width: 52px;
+          }
+        }
+      }
+    }
   }
 }
 

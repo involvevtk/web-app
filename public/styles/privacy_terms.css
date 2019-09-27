@@ -28,6 +28,16 @@ body {
           color: #039be5; }
           .navigation ul.items li a:hover:after {
             width: 100%; }
+    .navigation ul.items li.brand {
+      padding: 0px;
+      float: right; }
+      .navigation ul.items li.brand a:after {
+        display: none; }
+      .navigation ul.items li.brand a img.logo {
+        width: 32px; }
+        @media (min-width: 601px) {
+          .navigation ul.items li.brand a img.logo {
+            width: 52px; } }
 
 .page-footer {
   background-color: #f8f9fa;
