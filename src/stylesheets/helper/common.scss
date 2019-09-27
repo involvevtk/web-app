@@ -4,6 +4,7 @@ body {
 
 .main-page-content {
   min-height: 600px;
+  margin-bottom: 100px;
 }
 
 @mixin textWithBorderBottom($bottomBorderWidth: 10px) {
@@ -89,6 +90,17 @@ body {
             color: $secondary-color;
           }
         }
+      }
+    }
+  }
+  .reg-details {
+    margin: 40px 0 0 0;
+    text-align: center;
+    span {
+      display: block;
+      @include breakpoint(m) {
+        display: inline-block;
+        padding-right: 20px;
       }
     }
   }

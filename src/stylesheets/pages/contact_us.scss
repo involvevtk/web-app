@@ -3,4 +3,50 @@
 @import "../helper/common.scss";
 
 .contact-us {
+  .address {
+    max-width: 440px;
+    margin: 10px auto 10px auto;
+    background: $grey-1;
+    color: $secondary-color;
+    @include breakpoint(m) {
+      max-width: 520px;
+    }
+    .card-title {
+      color: $primary-color;
+    }
+  }
+  .person {
+    max-width: 310px;
+    margin: 10px auto 10px auto;
+    @include breakpoint(m) {
+      // max-width: 520px;
+    }
+    .card-image {
+      img {
+        border-radius: 50%;
+        padding: 30px;
+      }
+      .card-title {
+        background: rgba(255, 255, 255, 0.45098039215686275);
+        right: 0;
+        padding: 10px 5px;
+        color: $dark-1;
+      }
+    }
+    .card-content {
+      p {
+        font-family: "Reenie Beanie", cursive;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #039be5;
+      }
+      span {
+      }
+    }
+    .card-action {
+      a.phone_email {
+        text-transform: lowercase !important;
+      }
+    }
+  }
 }
