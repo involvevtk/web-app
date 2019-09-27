@@ -193,4 +193,17 @@ body {
       text-align: right;
       float: left; } }
 
+.home .container .third-block {
+  margin: 100px auto; }
+  .home .container .third-block .slider .slides .caption h3 {
+    color: #5d5d5d; }
+  .home .container .third-block .slider .slides .caption h5 {
+    color: #5d5d5d; }
+    .home .container .third-block .slider .slides .caption h5 a {
+      color: #039be5; }
+  .home .container .third-block .slider .indicators .indicator-item {
+    background-color: #cccccc; }
+    .home .container .third-block .slider .indicators .indicator-item.active {
+      background-color: #039be5; }
+
 /*# sourceMappingURL=home.css.map */

@@ -144,5 +144,29 @@
         }
       }
     }
+    .third-block {
+      margin: 100px auto;
+      .slider {
+        .slides .caption {
+          h3 {
+            color: $dark-2;
+          }
+          h5 {
+            color: $dark-2;
+            a {
+              color: $primary-color;
+            }
+          }
+        }
+        .indicators {
+          .indicator-item {
+            background-color: $grey-2;
+            &.active {
+              background-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
   }
 }
