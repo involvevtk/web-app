@@ -150,11 +150,18 @@
         .slides .caption {
           h3 {
             color: $dark-2;
+            background: rgba(255, 255, 255, 0.6705882352941176);
+            padding: 10px;
+            font-size: 32px;
           }
           h5 {
             color: $dark-2;
+            background: rgba(255, 255, 255, 0.6705882352941176);
+            padding: 10px;
+            font-size: 14px;
             a {
-              color: $primary-color;
+              cursor: pointer;
+              color: $dark-1;
             }
           }
         }

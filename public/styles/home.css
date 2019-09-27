@@ -196,11 +196,18 @@ body {
 .home .container .third-block {
   margin: 100px auto; }
   .home .container .third-block .slider .slides .caption h3 {
-    color: #5d5d5d; }
+    color: #5d5d5d;
+    background: rgba(255, 255, 255, 0.670588);
+    padding: 10px;
+    font-size: 32px; }
   .home .container .third-block .slider .slides .caption h5 {
-    color: #5d5d5d; }
+    color: #5d5d5d;
+    background: rgba(255, 255, 255, 0.670588);
+    padding: 10px;
+    font-size: 14px; }
     .home .container .third-block .slider .slides .caption h5 a {
-      color: #039be5; }
+      cursor: pointer;
+      color: #323232; }
   .home .container .third-block .slider .indicators .indicator-item {
     background-color: #cccccc; }
     .home .container .third-block .slider .indicators .indicator-item.active {
