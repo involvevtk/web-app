@@ -94,20 +94,31 @@
       // background-image: linear-gradient(to bottom right, #fff, $primary-color);
       position: relative;
       margin-bottom: 40px;
+
       .story,
       .vision {
         .graphic {
-          i {
-            color: $secondary-color;
-            font-size: 114px;
+          img.responsive-img {
+            max-width: 270px;
+            @include breakpoint(m) {
+              max-width: 380px;
+            }
           }
         }
         .description {
-          color: $secondary-color;
+          color: $dark-2;
           font-size: 18px;
+          text-align: center;
           @include breakpoint(m) {
             font-size: 24px;
+            text-align: left;
           }
+        }
+      }
+
+      .story .description {
+        @include breakpoint(m) {
+          text-align: right;
         }
       }
     }
