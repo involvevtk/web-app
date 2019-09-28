@@ -253,10 +253,15 @@ body {
     color: #5d5d5d;
     background: rgba(255, 255, 255, 0.670588);
     padding: 10px;
-    font-size: 14px; }
+    font-size: 14px;
+    transition-duration: 1s; }
     .home .container .third-block .slider .slides .caption h5 a {
       cursor: pointer;
       color: #323232; }
+    .home .container .third-block .slider .slides .caption h5:hover {
+      background: #000; }
+      .home .container .third-block .slider .slides .caption h5:hover a {
+        color: #fff; }
   .home .container .third-block .slider .indicators .indicator-item {
     background-color: #cccccc; }
     .home .container .third-block .slider .indicators .indicator-item.active {

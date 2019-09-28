@@ -186,9 +186,16 @@
             background: rgba(255, 255, 255, 0.6705882352941176);
             padding: 10px;
             font-size: 14px;
+            transition-duration: 1s;
             a {
               cursor: pointer;
               color: $dark-1;
+            }
+            &:hover {
+              background: #000;
+              a {
+                color: #fff;
+              }
             }
           }
         }
