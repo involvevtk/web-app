@@ -161,6 +161,17 @@
       }
     }
     .third-block {
+      .container {
+        @include breakpoint(s) {
+          margin: 0;
+          max-width: 100%;
+          width: 100%;
+          .col.s12 {
+            padding: 0px;
+          }
+        }
+      }
+
       margin: 100px auto;
       .slider {
         .slides .caption {
