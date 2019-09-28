@@ -3,4 +3,18 @@
 @import "../helper/common.scss";
 
 .involvement {
+  .main-page-content {
+    .container {
+      margin: 0 auto;
+      max-width: 100%;
+      width: 100%;
+      @include breakpoint(m) {
+        width: 85%;
+        max-width: 1280px;
+      }
+      .involvement-container {
+        overflow: hidden;
+      }
+    }
+  }
 }

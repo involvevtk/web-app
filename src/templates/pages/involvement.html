@@ -4,10 +4,22 @@
     <title>Involvement | Involve</title>
     {{include_html "common/third_party_page_content.html"}}
     <link rel="stylesheet" type="text/css" href="styles/involvement.css" />
+    {{include_html "common/react_library.html"}}
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   </head>
   <body class="involvement">
     {{include_html "common/header.html"}}
-    <div class="main-page-content"></div>
+    <div class="main-page-content">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col s12 involvement-container"
+            id="involvement-container"
+          ></div>
+        </div>
+      </div>
+    </div>
     {{include_html "common/footer.html"}}
+    <script src="js/involvement.js"></script>
   </body>
 </html>
