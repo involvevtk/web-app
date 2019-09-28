@@ -5,6 +5,13 @@ body {
   min-height: 600px;
   margin-bottom: 100px; }
 
+.subscribe {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 2;
+  background: #039be5; }
+
 .navigation {
   padding: 10px; }
   @media (min-width: 601px) {

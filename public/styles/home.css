@@ -5,6 +5,13 @@ body {
   min-height: 600px;
   margin-bottom: 100px; }
 
+.subscribe {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 2;
+  background: #039be5; }
+
 .navigation {
   padding: 10px; }
   @media (min-width: 601px) {
@@ -144,6 +151,15 @@ body {
     border-radius: 0% 100% 0% 0%;
     bottom: 0px;
     box-shadow: 0px 1px 11px 1px rgba(44, 44, 44, 0.66); }
+    .home .container .primary-block .shape-bottom h3.title {
+      text-align: center;
+      letter-spacing: 3px;
+      color: #fd9826;
+      font-family: "Reenie Beanie", cursive;
+      font-size: 71px;
+      text-shadow: 0px 5px 3px rgba(117, 117, 117, 0.4);
+      position: relative;
+      top: 100px; }
   .home .container .primary-block .who-are-we {
     margin-bottom: 0; }
     @media (min-width: 601px) {
@@ -181,9 +197,12 @@ body {
     .home .container .secondary-block .story h3.title,
     .home .container .secondary-block .vision h3.title {
       text-align: center;
-      text-shadow: 0px 3px 1px #f8f9fa;
       letter-spacing: 3px;
-      color: #fd9826; }
+      color: #fd9826;
+      font-family: "Reenie Beanie", cursive;
+      font-size: 71px;
+      text-shadow: 0px 5px 3px rgba(117, 117, 117, 0.4);
+      position: relative; }
     .home .container .secondary-block .story img.responsive-img,
     .home .container .secondary-block .vision img.responsive-img {
       max-width: 270px;

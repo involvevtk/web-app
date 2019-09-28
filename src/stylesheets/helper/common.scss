@@ -7,6 +7,14 @@ body {
   margin-bottom: 100px;
 }
 
+.subscribe {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 2;
+  background: $primary-color;
+}
+
 @mixin textWithBorderBottom($bottomBorderWidth: 10px) {
   color: $dark-1;
   transition: all 500ms;
