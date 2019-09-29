@@ -114,6 +114,12 @@ body {
   .contact-us .first-row .person .card-content {
     min-height: 150px; }
 
+.contact-us .second-section .card-content {
+  height: auto; }
+  @media (min-width: 601px) {
+    .contact-us .second-section .card-content {
+      height: 350px; } }
+
 .contact-us .address {
   max-width: 440px;
   margin: 10px auto 10px auto;

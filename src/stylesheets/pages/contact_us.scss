@@ -24,6 +24,14 @@
       }
     }
   }
+  .second-section {
+    .card-content {
+      height: auto;
+      @include breakpoint(m) {
+        height: 350px;
+      }
+    }
+  }
   .address {
     max-width: 440px;
     margin: 10px auto 10px auto;
