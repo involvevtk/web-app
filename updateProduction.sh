@@ -1,4 +1,4 @@
-echo "Pushing build output to production"
+echo "\n Pushing build output to production \n"
 
 git config --global user.email "involvevtk@gmail.com"
 git config --global user.name "involvevtk"
@@ -18,4 +18,4 @@ $guser
 $gpassword
 EOF
 
-echo "Push updated code to production_repo"
+echo "\n Push updated code to production_repo \n"
