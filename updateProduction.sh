@@ -6,8 +6,12 @@ setup_git() {
   git config --global user.name "involvevtk"
 }
 
-ls
-echo "current direcotry path"
+cd ..
+echo "Change direcotry path"
+
+mkdir production_repo
+cd production_repo
+
 
 git clone https://github.com/involvevtk/test_travis_build.git
 echo "clone test_travis_build repository"
@@ -17,6 +21,7 @@ echo "changed direcotry to test_travis_build"
 
 cp -r /home/travis/build/involvevtk/web-app/public/* ./
 echo "copied build public directory to repository"
+ls
 
 setup_git
 echo "Updated git config"
