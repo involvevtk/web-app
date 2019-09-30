@@ -16,10 +16,15 @@ echo "changed direcotry to test_travis_build"
 cp -r /home/travis/build/involvevtk/web-app/public/* ./
 echo "copied build public directory to repository"
 
-echo $guser
 setup_git
+echo "Updated git config"
+
 git add .
+echo "Added all files"
+
 git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
+echo "Added commit message"
+
 git push origin master << EOF
 $guser
 $gpassword
