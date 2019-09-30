@@ -1,6 +1,12 @@
 echo "Pushing build output to production"
 
 
+setup_git() {
+  git config --global user.email "involvevtk@gmail.com"
+  git config --global user.name "involvevtk"
+}
+
+
 git clone https://github.com/involvevtk/test_travis_build.git
 echo "clone test_travis_build repository"
 
@@ -10,8 +16,13 @@ echo "changed direcotry to test_travis_build"
 cp -r /home/travis/build/involvevtk/web-app/public/* ./
 echo "copied build public directory to repository"
 
+echo $guser
+setup_git
+git add .
+git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 git push origin master << EOF
-involvevtk
-involve@123
+$guser
+$gpassword
 EOF
+
 echo "Push updated code to github"
