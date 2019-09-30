@@ -16,4 +16,4 @@ after_script:
 after_success:
   # $TRAVIS_TEST_RESULT
   # push public folder content into github pages repository
-  - node updateProduction.js
+  - bash updateProduction.sh
