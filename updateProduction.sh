@@ -1,1 +1,14 @@
-console.log("Pushing build output to production");
+echo "Pushing build output to production"
+
+
+git clone https://github.com/involvevtk/test_travis_build.git
+echo "clone test_travis_build repository"
+
+cd test_travis_build
+echo "changed direcotry to test_travis_build"
+
+cp -r $TRAVIS_TEST_RESULT/public/* ./
+echo "copied build public directory to repository"
+
+git push origin master
+echo "Push updated code to github"
