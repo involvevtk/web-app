@@ -6,6 +6,8 @@ setup_git() {
   git config --global user.name "involvevtk"
 }
 
+ls
+echo "current direcotry path"
 
 git clone https://github.com/involvevtk/test_travis_build.git
 echo "clone test_travis_build repository"
