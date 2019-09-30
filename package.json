@@ -4,6 +4,7 @@
   "description": "Involve web app",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"TODO: no test specified\" && exit 1",
     "kill": "mkdir -p public && rm -r public/ && mkdir -p public",
     "asset": "cp -r resources public",
     "build-html": "node ./node_modules/kapid_html",
