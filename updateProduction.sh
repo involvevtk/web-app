@@ -1,7 +1,7 @@
 echo "\n Pushing build output to production \n"
 
-git config --global user.email "involvevtk@gmail.com"
-git config --global user.name "involvevtk"
+# git config --global user.email "involvevtk@gmail.com"
+# git config --global user.name "involvevtk"
 
 cd ..
 mkdir production_repo
@@ -13,9 +13,6 @@ git add .
 git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 
 
-git push origin master << EOF
-$guser
-$gpassword
-EOF
+git push git@github.com:involvevtk/test_travis_build.git master
 
 echo "\n Push updated code to production_repo \n"
