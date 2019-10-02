@@ -1,4 +1,4 @@
-echo "\n Pushing build output to production \n"
+echo "Pushing build output to production"
 
 # git config --global user.email "involvevtk@gmail.com"
 # git config --global user.name "involvevtk"
@@ -12,7 +12,7 @@ git config user.name "involvevtk"
 git pull https://$guser:$gpassword@github.com/$guser/involvevtk.github.io.git
 cp -r /home/travis/build/involvevtk/web-app/public/* ./
 git add .
-git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
+git commit --message "Travis build complete. Website new version $TRAVIS_BUILD_NUMBER ($TRAVIS_COMMIT_MESSAGE)"
 git push https://$guser:$gpassword@github.com/$guser/involvevtk.github.io.git master
 
-echo "\n Push updated code to production_repo \n"
+echo "Push updated code to production_repo"
