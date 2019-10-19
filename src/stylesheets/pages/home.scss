@@ -1,7 +1,17 @@
 @import "../helper/variables.scss";
 @import "../helper/media_queries_mixin.scss";
 @import "../helper/common.scss";
-
+@mixin owlNav() {
+  position: absolute;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  top: -15px;
+  &:hover {
+    color: $primary-color;
+  }
+}
 .main-page-content {
   min-height: 600px;
   width: 100%;
@@ -161,50 +171,22 @@
       }
     }
     .third-block {
-      .container {
-        @include breakpoint(s) {
-          margin: 0;
-          max-width: 100%;
+      .featured-slider {
+        position: relative;
+        .owl-nav {
+          position: absolute;
+          top: 50%;
           width: 100%;
-          .col.s12 {
-            padding: 0px;
+          margin: 0;
+          .owl-prev {
+            left: 0;
+            border-radius: 0 50% 50% 0;
+            @include owlNav();
           }
-        }
-      }
-
-      margin: 100px auto;
-      .slider {
-        .slides .caption {
-          h3 {
-            color: $dark-2;
-            background: rgba(255, 255, 255, 0.6705882352941176);
-            padding: 10px;
-            font-size: 32px;
-          }
-          h5 {
-            color: $dark-2;
-            background: rgba(255, 255, 255, 0.6705882352941176);
-            padding: 10px;
-            font-size: 14px;
-            transition-duration: 1s;
-            a {
-              cursor: pointer;
-              color: $dark-1;
-            }
-            &:hover {
-              background: #000;
-              a {
-                color: #fff;
-              }
-            }
-          }
-        }
-        .indicators {
-          .indicator-item {
-            background-color: $grey-2;
-            &.active {
-              background-color: $primary-color;
-            }
+          .owl-next {
+            right: 0;
+            border-radius: 50% 0 0 50%;
+            @include owlNav();
           }
         }
       }
