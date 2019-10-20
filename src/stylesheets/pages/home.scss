@@ -1,6 +1,7 @@
 @import "../helper/variables.scss";
 @import "../helper/media_queries_mixin.scss";
 @import "../helper/common.scss";
+@import "../helper/animate.scss";
 @mixin owlNav() {
   position: absolute;
   background: #fff;
@@ -171,6 +172,9 @@
       }
     }
     .third-block {
+      .container {
+        width: 100%;
+      }
       .featured-slider {
         position: relative;
         .owl-nav {
@@ -187,6 +191,43 @@
             right: 0;
             border-radius: 50% 0 0 50%;
             @include owlNav();
+          }
+        }
+        .featured-card {
+          .card-image {
+            .card-title {
+              font-size: 14px;
+              padding: 5px;
+              background: rgba(0, 0, 0, 0.5);
+              @include breakpoint(m) {
+                font-size: 24px;
+                padding: 15px;
+              }
+            }
+          }
+          .card-stacked {
+            .card-content {
+              padding: 5px;
+              @include breakpoint(m) {
+                padding: 15px;
+              }
+              p {
+                font-family: "Reenie Beanie", cursive;
+                font-size: 22px;
+                @include breakpoint(m) {
+                  font-size: 32px;
+                }
+              }
+            }
+            .card-action {
+              padding: 5px;
+              @include breakpoint(m) {
+                padding: 15px;
+              }
+              a {
+                color: $primary-color;
+              }
+            }
           }
         }
       }
